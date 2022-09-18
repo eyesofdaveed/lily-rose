@@ -259,7 +259,6 @@ span.text-red {
   line-height: 1.2;
   font-weight: 400;
   color: #f1faee;
-  cursor: default;
 }
 .products-heading h2 {
   font-size: 40px;
@@ -299,7 +298,7 @@ span.text-red {
   color: #1d3557;
 }
 .footer-banner-container {
-  padding: 100px 40px;
+  padding: 40px;
   background-color: #f08080;
   border-radius: 15px;
   position: relative;
@@ -310,8 +309,21 @@ span.text-red {
   margin-top: 120px;
 }
 .banner-desc {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 20%;
+}
+.banner-desc .left {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner-desc .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .banner-desc button {
   border-radius: 15px;
@@ -338,16 +350,11 @@ span.text-red {
   right: 50%;
   transform: translate(50%, 0);
 }
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
 .banner-desc .right {
   line-height: 1.4;
 }
 .banner-desc .right h3 {
+  text-align: right;
   font-weight: 800;
   font-size: 60px;
 }
@@ -764,6 +771,15 @@ span.text-red {
   .topbar-icon-container span {
     display: none;
   }
+  .footer-banner-container .banner-desc h3 {
+    font-size: 4em;
+  }
+  .footer-banner-container .banner-desc img {
+    width: ;
+  }
+  .footer-banner-image {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -950,6 +966,20 @@ span.text-red {
   .about-us-heading {
     font-size: 3em;
   }
+  .footer-banner-container {
+    height: auto;
+    padding: 20px;
+  }
+  .footer-banner-container .banner-desc {
+    grid-template-columns: 100%;
+  }
+  .footer-banner-container .banner-desc h3 {
+    font-size: 4em;
+    z-index: 10010;
+  }
+  .footer-banner-image {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -969,6 +999,9 @@ span.text-red {
   }
   .about-us-heading {
     font-size: 2.5em;
+  }
+  .footer-banner-image {
+    width: 65%;
   }
 }
 

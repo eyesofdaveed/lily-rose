@@ -3,7 +3,6 @@ import React from "react";
 import { urlFor } from "../lib/client";
 
 const About = ({ data }) => {
-  console.log(data);
   return (
     <div className="about-us-container" id="about">
       <div className="about-us-left-column">

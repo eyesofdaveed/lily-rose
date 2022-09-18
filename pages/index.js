@@ -18,7 +18,6 @@ const Home = ({ products, bannerData, footerData, aboutData }) => (
     <DeliveryInfo />
     <Catalog products={products || []} />
     <About data={aboutData[0]} />
-    <Contacts />
     <FooterBanner footerBanner={footerData && footerData[0]} />
   </div>
 );
