@@ -316,7 +316,7 @@ span.text-red {
 .banner-desc .left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .banner-desc .right {
@@ -360,6 +360,7 @@ span.text-red {
 }
 .banner-desc .right p {
   font-size: 18px;
+  z-index: 10010;
 }
 .banner-desc .right .company-desc {
   font-size: 14px;
@@ -780,6 +781,10 @@ span.text-red {
   .footer-banner-image {
     width: 35%;
   }
+  .footer-banner-container {
+    padding: 25px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -979,6 +984,7 @@ span.text-red {
   }
   .footer-banner-image {
     width: 45%;
+    filter: brightness(80%);
   }
 }
 
@@ -995,7 +1001,8 @@ span.text-red {
   }
   .about-us-greeting {
     font-size: 1.8em;
-    right: 4%;
+    right: 3%;
+    top: 3%;
   }
   .about-us-heading {
     font-size: 2.5em;
