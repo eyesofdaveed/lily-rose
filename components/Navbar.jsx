@@ -63,7 +63,7 @@ const Navbar = () => {
   );
 };
 
-export const Dropdown = ({ label, options }) => {
+export const Dropdown = ({ label, options, onClose }) => {
   const { setCategory } = useStateContext();
   const [show, setShow] = useState(false);
   return (
@@ -90,6 +90,7 @@ export const Dropdown = ({ label, options }) => {
                 value={option.value}
                 onClick={() => {
                   setCategory(option);
+                  onClose();
                 }}
               >
                 {option.label}
