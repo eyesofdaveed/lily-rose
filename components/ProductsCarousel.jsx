@@ -51,8 +51,19 @@ const ProductsCarousel = ({ products }) => {
                     height={250}
                     className="carousel-image"
                   />
-                  <p className="product-name">{product.name}</p>
-                  <p className="product-price">${product.price}</p>
+                  <p style={{ fontWeight: "500" }} className="product-name">
+                    {product.name}
+                  </p>
+                  <p
+                    style={{
+                      fontWeight: "500",
+                      marginTop: "6px",
+                      color: "black",
+                    }}
+                    className="product-price"
+                  >
+                    ${product.price}
+                  </p>
                 </div>
               </Link>
             </div>

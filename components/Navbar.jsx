@@ -90,7 +90,7 @@ export const Dropdown = ({ label, options, onClose }) => {
                 value={option.value}
                 onClick={() => {
                   setCategory(option);
-                  onClose();
+                  setShow(false);
                 }}
               >
                 {option.label}

@@ -10,7 +10,7 @@ import { client, urlFor } from "../../lib/client";
 import { ProductsCarousel, Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
-const ProductDetails = ({ product, products }) => {
+const ProductDetails = ({ product, bestSellers }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
@@ -77,7 +77,7 @@ const ProductDetails = ({ product, products }) => {
         </div>
       </div>
 
-      <ProductsCarousel products={products || []} />
+      <ProductsCarousel products={bestSellers || []} />
     </div>
   );
 };
@@ -106,13 +106,13 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]';
+  const bestSellerQuery = '*[_type == "bestSellers"]';
 
   const product = await client.fetch(query);
-  const products = await client.fetch(productsQuery);
+  const bestSellers = await client.fetch(bestSellerQuery);
 
   return {
-    props: { products, product },
+    props: { bestSellers, product },
   };
 };
 

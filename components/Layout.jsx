@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>Lily-Rose Flower Delivery</title>
+        <title>Lily-Rose Flowers Delivery</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -37,10 +37,6 @@ const Layout = ({ children }) => {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <header>
         {isMobile && <Sidebar className="sidebar" />}
