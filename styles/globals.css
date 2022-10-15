@@ -916,6 +916,7 @@ span.text-red {
 }
 // Contacts Styling
 .contact-description {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -935,6 +936,9 @@ span.text-red {
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 35px;
+}
+.ticker {
+  width: 100%;
 }
 .contact-ticker-box {
   display: flex;
