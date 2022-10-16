@@ -34,12 +34,14 @@ const HeroBanner = ({ heroBanner }) => {
         repeat={Infinity} // Repeat this Animation Sequence infinitely
       />
       <div className="desc">
-        <h5>{heroBanner.desc}</h5>
-        <span>{heroBanner.smallText}</span>
+        <AnchorLink href={`#catalog`} offset="70">
+          {heroBanner.buttonText}
+        </AnchorLink>
+        <div>
+          <h5>{heroBanner.desc}</h5>
+          <span>{heroBanner.smallText}</span>
+        </div>
       </div>
-      <AnchorLink href={`#catalog`} offset="70">
-        {heroBanner.buttonText}
-      </AnchorLink>
     </AnimatedBg>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Product from "./Product";
 import { Dropdown } from "./Navbar";
@@ -15,6 +16,14 @@ const Catalog = ({ products }) => {
           <ul className="navbar-menu catalog-navbar-menu">
             <Dropdown label="Flowers" options={flowersOptions} />
             <Dropdown label="Services" options={servicesOptions} />
+            <Link href={`/funeral`}>
+              <li
+                style={{ fontSize: "20px", color: "#1d3557" }}
+                className="navbar-menu-item"
+              >
+                Funeral
+              </li>
+            </Link>
           </ul>
         </nav>
       </div>

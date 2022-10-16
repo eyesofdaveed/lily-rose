@@ -40,11 +40,11 @@ const Navbar = () => {
             <ul className="navbar-menu">
               <Dropdown label="Flowers" options={flowersOptions} />
               <Dropdown label="Services" options={servicesOptions} />
+              <Link href={`/funeral`}>
+                <li className="navbar-menu-item">Funeral</li>
+              </Link>
               {isOnHomePage ? (
                 <>
-                  <AnchorLink href={`#funeral`} offset="60">
-                    <li className="navbar-menu-item">Funeral</li>
-                  </AnchorLink>
                   <AnchorLink href={`#about`} offset="60">
                     <li className="navbar-menu-item">About us</li>
                   </AnchorLink>
@@ -54,9 +54,6 @@ const Navbar = () => {
                 </>
               ) : (
                 <>
-                  <Link href={`/#funeral`}>
-                    <li className="navbar-menu-item">Funeral</li>
-                  </Link>
                   <Link href={`/#about`}>
                     <li className="navbar-menu-item">About us</li>
                   </Link>
@@ -65,6 +62,13 @@ const Navbar = () => {
                   </Link>
                 </>
               )}
+              <Link
+                href={{
+                  pathname: "/terms",
+                }}
+              >
+                <li className="navbar-menu-item">Delivery Terms</li>
+              </Link>
             </ul>
           </nav>
           <button

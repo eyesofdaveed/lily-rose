@@ -7,6 +7,7 @@ import footer from "./footer";
 import bestSellers from "./bestSellers";
 import about from "./about";
 import services from "./services";
+import funeral from "./funeral";
 
 export default createSchema({
   name: "default",
@@ -17,5 +18,6 @@ export default createSchema({
     bestSellers,
     about,
     services,
+    funeral,
   ]),
 });
