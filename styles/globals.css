@@ -1080,7 +1080,7 @@ span.text-red {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 35vh;
+  height: 40vh;
   padding: 5%;
   border-radius: 12px;
   box-shadow: 0px 8px 20px 1px rgba(43, 5, 72, 0.3);
@@ -1110,17 +1110,18 @@ span.text-red {
 }
 .custom-burger-menu span {
   display: flex !important;
-  flex-direction: column;
-  gap: 6px;
+  display: -webkit-flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
   justify-content: center !important;
   align-items: center !important;
   padding-top: 6px !important;
 }
 .custom-burger-bars {
-  width: 28px;
+  width: 28px !important;
   height: 6px !important;
   position: static !important;
-  display: block;
+  display: block !important;
 }
 @media screen and (max-width: 1100px) {
   .topbar-icon-container span {
@@ -1146,7 +1147,7 @@ span.text-red {
     width: 80%;
   }
   .funeral-top-container {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
@@ -1411,7 +1412,7 @@ span.text-red {
     right: 7% !important;
   }
   .funeral-top-container {
-    height: 60vh;
+    height: 50vh;
   }
   .footer-container {
     padding-bottom: 30px;
@@ -1419,10 +1420,13 @@ span.text-red {
   .hero-banner-container h1 {
     margin-bottom: 40px;
   }
+  .funeral-top-container p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   .funeral-top-container {
-    height: 65vh;
+    height: 60vh;
   }
   .about-us-right-column span {
     top: 35px !important;
