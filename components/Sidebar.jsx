@@ -30,6 +30,8 @@ export default (props) => {
       isOpen={isOpen}
       onOpen={handleIsOpen}
       onClose={handleIsOpen}
+      burgerButtonClassName="custom-burger-menu"
+      burgerBarClassName="custom-burger-bars"
     >
       <nav>
         <ul className="navbar-menu sidebar-menu">

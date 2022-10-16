@@ -45,7 +45,8 @@ const ProductDetails = ({ product, bestSellers }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">
-            {!!1 && <span className="old-price">${oldPrice}</span>}${price}
+            {!!oldPrice && <span className="old-price">${oldPrice}</span>}$
+            {price}
           </p>
           <div className="quantity">
             <h3>Quantity:</h3>

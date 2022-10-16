@@ -46,7 +46,7 @@ a {
   margin-right: 16px;
   color: #1d3557;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 19px;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 1.1px;
@@ -814,11 +814,11 @@ span.text-red {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 36px;
   height: 30px;
   right: 16px;
-  top: 100px;
+  top: 79px;
   color: #1d3557;
 }
 
@@ -873,7 +873,7 @@ span.text-red {
   margin-right: 16px;
   color: #1d3557;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 19px;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 1.1px;
@@ -907,7 +907,7 @@ span.text-red {
   display: block;
   padding: 6px;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   letter-spacing: 1.1px;
   margin-bottom: 10px;
@@ -1101,6 +1101,27 @@ span.text-red {
   line-height: 20px;
   letter-spacing: 1.01px;
 }
+.custom-burger-menu {
+  background: #fff;
+  height: 42px !important;
+  width: 40px !important;
+  border-radius: 4px;
+  box-shadow: 0px 8px 20px 1px rgba(43, 5, 72, 0.3);
+}
+.custom-burger-menu span {
+  display: flex !important;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-top: 6px !important;
+}
+.custom-burger-bars {
+  width: 28px;
+  height: 6px !important;
+  position: static !important;
+  display: block;
+}
 @media screen and (max-width: 1100px) {
   .topbar-icon-container span {
     display: none;
@@ -1276,11 +1297,12 @@ span.text-red {
   .navbar-menu {
     flex-direction: column;
     align-items: flex-start;
+    gap: 6px;
   }
   .navbar-menu-item {
     padding-left: 5px;
     color: #f1faee;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .navbar-menu-item:hover {
     color: #a8dadc;
@@ -1344,7 +1366,7 @@ span.text-red {
     right: 23% !important;
   }
   .funeral-top-container {
-    height: 45vh;
+    height: 50vh;
   }
 }
 
@@ -1389,11 +1411,21 @@ span.text-red {
     right: 7% !important;
   }
   .funeral-top-container {
-    height: 56vh;
+    height: 60vh;
+  }
+  .footer-container {
+    padding-bottom: 30px;
+  }
+  .hero-banner-container h1 {
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 500px) {
   .funeral-top-container {
     height: 65vh;
+  }
+  .about-us-right-column span {
+    top: 35px !important;
+    right: 22% !important;
   }
 }
