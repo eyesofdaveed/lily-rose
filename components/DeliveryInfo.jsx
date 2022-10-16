@@ -11,7 +11,7 @@ const DeliveryInfo = () => {
           width="64"
           height="64"
         />
-        <p>Every morning we handpick the fresh flowers</p>
+        <p>Fresh handpicked flowers</p>
       </div>
       <div className="delivery-info-item">
         <Image
@@ -20,7 +20,7 @@ const DeliveryInfo = () => {
           width="64"
           height="64"
         />
-        <p>Nice postcard always good</p>
+        <p>Free postcards with love</p>
       </div>
       <div className="delivery-info-item">
         <Image
@@ -29,8 +29,9 @@ const DeliveryInfo = () => {
           width="64"
           height="64"
         />
-        <p>Free delivery around Sunnyvale</p>
+        <p>Convenient express delivery</p>
       </div>
+      <span id="catalogUpper"></span>
     </div>
   );
 };

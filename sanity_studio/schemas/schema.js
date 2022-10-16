@@ -6,8 +6,16 @@ import banner from "./banner";
 import footer from "./footer";
 import bestSellers from "./bestSellers";
 import about from "./about";
+import services from "./services";
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([product, banner, footer, bestSellers, about]),
+  types: schemaTypes.concat([
+    product,
+    banner,
+    footer,
+    bestSellers,
+    about,
+    services,
+  ]),
 });

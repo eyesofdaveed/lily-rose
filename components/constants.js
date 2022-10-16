@@ -1,5 +1,6 @@
 export const flowersOptions = [
-  { label: "Most popular", value: "populars" },
+  { label: "All Flowers", value: "all" },
+  { label: "Most Popular", value: "populars" },
   { label: "Bouquets", value: "bouquets" },
   { label: "Flowers in box", value: "boxes" },
   { label: "Gifts", value: "gifts" },

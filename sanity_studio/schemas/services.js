@@ -1,6 +1,6 @@
 export default {
-  name: "product",
-  title: "Product",
+  name: "service",
+  title: "Services",
   type: "document",
   fields: [
     {
@@ -47,12 +47,9 @@ export default {
       type: "string",
       options: {
         list: [
-          { title: "Vase arrangements", value: "vases" },
-          { title: "Bouquets", value: "bouquets" },
-          { title: "Flowers in box", value: "boxes" },
-          { title: "Roses", value: "roses" },
-          { title: "Most popular", value: "populars" },
-          { title: "Gifts", value: "gifts" },
+          { label: "Corporates", value: "corporates" },
+          { label: "Marriage proposal", value: "proposals" },
+          { label: "Wedding flowers", value: "weddings" },
         ],
       },
     },

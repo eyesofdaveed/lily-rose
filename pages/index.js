@@ -12,7 +12,6 @@ import {
 } from "../components";
 
 const Home = ({ products, bannerData, footerData, aboutData, bestSellers }) => {
-  console.log(products, bestSellers);
   return (
     <div>
       <HeroBanner heroBanner={bannerData[0]} />

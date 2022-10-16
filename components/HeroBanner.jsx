@@ -35,10 +35,10 @@ const HeroBanner = ({ heroBanner }) => {
       />
       <div className="desc">
         <h5>{heroBanner.desc}</h5>
-        <p>{heroBanner.smallText}</p>
+        <span>{heroBanner.smallText}</span>
       </div>
       <AnchorLink href={`#catalog`} offset="70">
-        <button type="button">{heroBanner.buttonText}</button>
+        {heroBanner.buttonText}
       </AnchorLink>
     </AnimatedBg>
   );

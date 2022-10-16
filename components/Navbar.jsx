@@ -3,12 +3,14 @@ import Link from "next/link";
 import { AiOutlineShopping } from "react-icons/ai";
 import Image from "next/image";
 import AnchorLink from "react-anchor-link-smooth-scroll-v2";
+import { useRouter } from "next/router";
 
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 import { flowersOptions, servicesOptions } from "./constants";
 
 const Navbar = () => {
+  const router = useRouter();
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -16,6 +18,8 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobile(window.innerWidth <= 800);
   }, []);
+
+  const isOnHomePage = router.route === "/";
 
   return (
     <div className="navbar-container">
@@ -36,15 +40,31 @@ const Navbar = () => {
             <ul className="navbar-menu">
               <Dropdown label="Flowers" options={flowersOptions} />
               <Dropdown label="Services" options={servicesOptions} />
-              <AnchorLink href={`#funeral`} offset="60">
-                <li className="navbar-menu-item">Funeral</li>
-              </AnchorLink>
-              <AnchorLink href={`#about`} offset="60">
-                <li className="navbar-menu-item">About us</li>
-              </AnchorLink>
-              <AnchorLink href={`#contacts`} offset="60">
-                <li className="navbar-menu-item">Contacts</li>
-              </AnchorLink>
+              {isOnHomePage ? (
+                <>
+                  <AnchorLink href={`#funeral`} offset="60">
+                    <li className="navbar-menu-item">Funeral</li>
+                  </AnchorLink>
+                  <AnchorLink href={`#about`} offset="60">
+                    <li className="navbar-menu-item">About us</li>
+                  </AnchorLink>
+                  <AnchorLink href={`#contacts`} offset="60">
+                    <li className="navbar-menu-item">Contacts</li>
+                  </AnchorLink>
+                </>
+              ) : (
+                <>
+                  <Link href={`/#funeral`}>
+                    <li className="navbar-menu-item">Funeral</li>
+                  </Link>
+                  <Link href={`/#about`}>
+                    <li className="navbar-menu-item">About us</li>
+                  </Link>
+                  <Link href={`/#contacts`}>
+                    <li className="navbar-menu-item">Contacts</li>
+                  </Link>
+                </>
+              )}
             </ul>
           </nav>
           <button
@@ -63,9 +83,13 @@ const Navbar = () => {
   );
 };
 
-export const Dropdown = ({ label, options, onClose }) => {
+export const Dropdown = ({ label, options }) => {
+  const router = useRouter();
   const { setCategory } = useStateContext();
   const [show, setShow] = useState(false);
+
+  const isOnHomePage = router.route === "/";
+
   return (
     <div className="dropdown-menu-container" style={{ position: "relative" }}>
       <label
@@ -81,11 +105,10 @@ export const Dropdown = ({ label, options, onClose }) => {
           onMouseLeave={() => setShow(false)}
         >
           {options.map((option) => {
-            return (
+            return isOnHomePage ? (
               <AnchorLink
                 offset="70"
                 href="#catalog"
-                className="dropdown-menu-item"
                 key={option.value}
                 value={option.value}
                 onClick={() => {
@@ -95,6 +118,16 @@ export const Dropdown = ({ label, options, onClose }) => {
               >
                 {option.label}
               </AnchorLink>
+            ) : (
+              <span
+                key={option.value}
+                onClick={() => {
+                  setCategory(option);
+                  setShow(false);
+                }}
+              >
+                <Link href="/#catalogUpper">{option.label}</Link>
+              </span>
             );
           })}
         </div>

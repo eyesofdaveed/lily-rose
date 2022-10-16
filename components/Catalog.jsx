@@ -22,7 +22,9 @@ const Catalog = ({ products }) => {
       <h1 className="category-filter-label">{selectedCategory.label}</h1>
       <div className="products-container">
         {products?.map((product) => {
-          if (product.category === selectedCategory.value) {
+          if (selectedCategory.value === "all") {
+            return <Product key={product._id} product={product} />;
+          } else if (product.category === selectedCategory.value) {
             return <Product key={product._id} product={product} />;
           }
         })}

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { urlFor } from "../lib/client";
 
@@ -10,6 +11,12 @@ const About = ({ data }) => {
         <h3 className="about-us-greeting">{data.greeting}</h3>
       </div>
       <div className="about-us-right-column">
+        <Image
+          src="/love.png"
+          alt="Bay Area love fresh flowers"
+          width="64"
+          height="64"
+        />
         <h2 className="about-us-heading">{data.heading}</h2>
         <p className="about-us-desc">{data.desc}</p>
       </div>
