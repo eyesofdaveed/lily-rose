@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src="/main-logo.png"
-            alt="Lily-Rose Flowers"
+            alt="Lily-Rose Flowers & Bouquets Delivery for any occasion"
             width="160"
             height="80"
           />

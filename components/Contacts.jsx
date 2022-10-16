@@ -39,7 +39,7 @@ const Contacts = () => {
             <div className="contact-icon-box">
               <Image
                 src="/phone-message.png"
-                alt="call message lily rose"
+                alt="call message lily rose flowers delivery"
                 width="40"
                 height="40"
               />
@@ -52,7 +52,7 @@ const Contacts = () => {
             <div className="contact-icon-box">
               <Image
                 src="/real-estate.png"
-                alt="lily-rose-flowers delivery address"
+                alt="lily-rose-flowers delivery address in sunnyvale"
                 width="40"
                 height="40"
               />
@@ -65,7 +65,7 @@ const Contacts = () => {
             <div className="contact-icon-box">
               <Image
                 src="/instagram.png"
-                alt="call message lily rose"
+                alt="instagram pictures online flowers delivery"
                 width="40"
                 height="40"
               />
@@ -78,7 +78,7 @@ const Contacts = () => {
             <div className="contact-icon-box">
               <Image
                 src="/facebook.png"
-                alt="call message lily rose"
+                alt="facebook contact online flowers and bouquets delivery"
                 width="40"
                 height="40"
               />

@@ -7,7 +7,7 @@ const DeliveryInfo = () => {
       <div className="delivery-info-item">
         <Image
           src="/fresh-flowers.png"
-          alt="Lily-Rose Flowers"
+          alt="Lily-Rose Flowers Delivery Sunnyvale California"
           width="64"
           height="64"
         />
@@ -16,7 +16,7 @@ const DeliveryInfo = () => {
       <div className="delivery-info-item">
         <Image
           src="/free-postcard.png"
-          alt="Lily-Rose Flowers"
+          alt="Lily-Rose Flowers Delivery Sunnyvale Bay Area"
           width="64"
           height="64"
         />
@@ -25,7 +25,7 @@ const DeliveryInfo = () => {
       <div className="delivery-info-item">
         <Image
           src="/free-delivery.png"
-          alt="Lily-Rose Flowers"
+          alt="Lily-Rose Flowers Delivery Sunnyvale California"
           width="64"
           height="64"
         />

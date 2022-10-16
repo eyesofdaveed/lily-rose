@@ -616,6 +616,10 @@ span.text-red {
 }
 .product-detail-desc p {
   margin-top: 10px;
+  overflow-wrap: break-word;
+}
+.product-detail-desc h1 {
+  overflow-wrap: break-word;
 }
 .reviews p {
   color: #324d67;

@@ -16,7 +16,34 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>Lily-Rose Flowers Delivery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+          Lily-Rose Flowers & Bouquets Delivery in Sunnyvale, Bay Area
+        </title>
+        <meta
+          name="description"
+          content="Online flowers and bouquets delivery in Sunnyvale, California. Wide variety of arrangements for Marriage Proposal, Marriage, Corporates and Funeral."
+        />
+        <meta
+          name="keywords"
+          content="flowers, bouquest, flowers in vase, arrangements, roses, tulips, 50 roses, 25 roses, 25 tulips, 50 tulips, bouquet of roses, flowers delivery, birthday flowers delivery, sympathy flowers delivery, same day flowers delivery, funeral flowers delivery, flowers delivery near me, flowers delivery bay area, flowers delivery sunnyvale, mothers day flowers delivery, online flowers shop, online flowers delivery, flowers for marriage, flowers for birthdays, flowers for events, flowers and gifts,Sunnyvale,
+          Santa Clara,
+          Mt. View,
+          San Jose,
+          Milpitas,
+          Saratoga,
+          Cupertino,
+          Los Gatos,
+          Los Altos,
+          Los Altos Hills,
+          Palo Alto,
+          Menlo Park,
+          Atherton,
+          Monte Sereno,
+          Stanford,"
+        />
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link
           rel="apple-touch-icon"

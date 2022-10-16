@@ -22,7 +22,7 @@ const HeroBanner = ({ heroBanner }) => {
     >
       <img
         src={urlFor(heroBanner.image)}
-        alt="flowers bouquet hand to hand delivery"
+        alt="online flowers bouquet marriage birthday hand to hand delivery"
         className="hero-banner-image"
       />
       <h3>{heroBanner.midText}</h3>
