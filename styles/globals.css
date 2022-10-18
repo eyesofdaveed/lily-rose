@@ -135,6 +135,7 @@ span.text-red {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .product-card-container {
   margin: 10px auto !important;
@@ -1122,6 +1123,12 @@ span.text-red {
   height: 6px !important;
   position: static !important;
   display: block !important;
+}
+.product-card-sale-wrapper {
+  position: absolute;
+  z-index: 99999;
+  top: -25px;
+  right: -35px;
 }
 @media screen and (max-width: 1100px) {
   .topbar-icon-container span {
