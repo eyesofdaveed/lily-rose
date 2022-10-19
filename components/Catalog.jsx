@@ -15,7 +15,7 @@ const Catalog = ({ products }) => {
         <nav>
           <ul className="navbar-menu catalog-navbar-menu">
             <Dropdown label="Flowers" options={flowersOptions} />
-            <Dropdown label="Services" options={servicesOptions} />
+            {/* <Dropdown label="Services" options={servicesOptions} /> */}
             <Link href={`/funeral`}>
               <li
                 style={{ fontSize: "20px", color: "#1d3557" }}

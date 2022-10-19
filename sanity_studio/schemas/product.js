@@ -47,12 +47,14 @@ export default {
       type: "string",
       options: {
         list: [
-          { title: "Vase arrangements", value: "vases" },
           { title: "Bouquets", value: "bouquets" },
+          { title: "Flowers in basket", value: "basket" },
           { title: "Flowers in box", value: "boxes" },
-          { title: "Roses", value: "roses" },
-          { title: "Most popular", value: "populars" },
           { title: "Gifts", value: "gifts" },
+          { label: "Marriage proposal", value: "proposals" },
+          { title: "Roses", value: "roses" },
+          { title: "Vase arrangements", value: "vases" },
+          { label: "Wedding flowers", value: "weddings" },
         ],
       },
     },

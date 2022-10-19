@@ -40,11 +40,11 @@ export default (props) => {
             options={flowersOptions}
             onClose={closeSideBar}
           />
-          <Dropdown
+          {/* <Dropdown
             label="Services"
             options={servicesOptions}
             onClose={closeSideBar}
-          />
+          /> */}
           <Link href={`/funeral`}>
             <li className="navbar-menu-item">Funeral</li>
           </Link>

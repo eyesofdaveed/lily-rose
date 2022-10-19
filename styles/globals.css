@@ -1440,3 +1440,8 @@ span.text-red {
     right: 22% !important;
   }
 }
+@media screen and (max-width: 400px) {
+  .funeral-top-container {
+    height: 65vh;
+  }
+}

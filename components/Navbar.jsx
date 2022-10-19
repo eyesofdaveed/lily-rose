@@ -39,7 +39,7 @@ const Navbar = () => {
           <nav>
             <ul className="navbar-menu">
               <Dropdown label="Flowers" options={flowersOptions} />
-              <Dropdown label="Services" options={servicesOptions} />
+              {/* <Dropdown label="Services" options={servicesOptions} /> */}
               <Link href={`/funeral`}>
                 <li className="navbar-menu-item">Funeral</li>
               </Link>
