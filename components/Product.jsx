@@ -5,10 +5,13 @@ import Image from "next/image";
 
 import { urlFor } from "../lib/client";
 
-const Product = ({ product: { image, name, slug, price, oldPrice } }) => {
+const Product = ({
+  product: { image, name, slug, price, oldPrice },
+  isFuneral = false,
+}) => {
   return (
     <Tilt className="product-card-container">
-      <Link href={`/product/${slug.current}`}>
+      <Link href={`/${isFuneral ? "funeral" : "product"}/${slug.current}`}>
         <div className="product-card">
           {!!oldPrice && (
             <div className="product-card-sale-wrapper">

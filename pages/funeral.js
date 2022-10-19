@@ -24,7 +24,7 @@ const Funeral = ({ funeralFlowers }) => {
       <h1 className="category-filter-label">Funeral</h1>
       <div className="products-container">
         {funeralFlowers?.map((flower) => {
-          return <Product key={flower._id} product={flower} />;
+          return <Product key={flower._id} product={flower} isFuneral={true} />;
         })}
       </div>
     </div>
