@@ -1110,10 +1110,9 @@ span.text-red {
   box-shadow: 0px 8px 20px 1px rgba(43, 5, 72, 0.3);
 }
 .custom-burger-menu span {
-  display: flex !important;
-  display: -webkit-flex !important;
-  flex-direction: column !important;
-  gap: 6px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-gap: 6px !important;
   justify-content: center !important;
   align-items: center !important;
   padding-top: 6px !important;
@@ -1123,6 +1122,7 @@ span.text-red {
   height: 6px !important;
   position: static !important;
   display: block !important;
+  margin: 0 auto !important;
 }
 .product-card-sale-wrapper {
   position: absolute;
@@ -1438,6 +1438,9 @@ span.text-red {
   .about-us-right-column span {
     top: 35px !important;
     right: 22% !important;
+  }
+  .hero-banner-container {
+    padding: 60px 25px;
   }
 }
 @media screen and (max-width: 400px) {
