@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { urlFor } from "../lib/client";
 
 const ProductsCarousel = ({ products }) => {
+  console.log(products);
   return (
     <div className="products-heading">
       <h2>Best Sellers</h2>

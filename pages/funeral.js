@@ -4,6 +4,7 @@ import { client } from "../lib/client";
 import Product from "../components/Product";
 
 const Funeral = ({ funeralFlowers }) => {
+  console.log(funeralFlowers);
   return (
     <div className="funeral-wrapper">
       <div className="funeral-top-container">
