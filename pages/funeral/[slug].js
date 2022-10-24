@@ -6,7 +6,7 @@ import { ProductsCarousel } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, bestSellers }) => {
-  const { image, name, details, price, oldPrice } = product;
+  const { image, name, details, price, oldPrice, delivery } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
@@ -44,6 +44,8 @@ const ProductDetails = ({ product, bestSellers }) => {
           <h1>{name}</h1>
           <h4>Details: </h4>
           <p>{details}</p>
+          <h4>Delivery: </h4>
+          <p>{delivery}</p>
           <p className="price">
             {!!oldPrice && <span className="old-price">${oldPrice}</span>}$
             {price}
