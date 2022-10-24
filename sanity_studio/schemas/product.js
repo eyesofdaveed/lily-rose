@@ -42,6 +42,11 @@ export default {
       type: "string",
     },
     {
+      name: "delivery",
+      title: "Delivery",
+      type: "string",
+    },
+    {
       name: "category",
       title: "Category",
       type: "string",

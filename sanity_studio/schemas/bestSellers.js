@@ -41,5 +41,10 @@ export default {
       title: "Details",
       type: "string",
     },
+    {
+      name: "delivery",
+      title: "Delivery",
+      type: "string",
+    },
   ],
 };
