@@ -16,7 +16,7 @@ const ProductsCarousel = ({ products }) => {
       <h2>Best Sellers</h2>
       <p>Flowers for any occasion</p>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={20}
         loop={true}
         autoplay={{
