@@ -52,6 +52,11 @@ export default {
       type: "string",
     },
     {
+      name: "includes",
+      title: "Includes",
+      type: "string",
+    },
+    {
       name: "category",
       title: "Category",
       type: "string",

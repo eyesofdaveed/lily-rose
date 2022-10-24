@@ -7,8 +7,16 @@ import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, bestSellers }) => {
   console.log(product);
-  const { image, name, details, price, oldPrice, delivery, dimensions } =
-    product;
+  const {
+    image,
+    name,
+    details,
+    price,
+    oldPrice,
+    delivery,
+    dimensions,
+    includes,
+  } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
@@ -56,6 +64,12 @@ const ProductDetails = ({ product, bestSellers }) => {
             <>
               <h4>Approximate Dimensions: </h4>
               <p>{dimensions}</p>
+            </>
+          )}
+          {!!includes && (
+            <>
+              <h4>Includes: </h4>
+              <p>{includes}</p>
             </>
           )}
           <p className="price">

@@ -51,5 +51,10 @@ export default {
       title: "Dimensions",
       type: "string",
     },
+    {
+      name: "includes",
+      title: "Includes",
+      type: "string",
+    },
   ],
 };
