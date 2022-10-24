@@ -46,5 +46,10 @@ export default {
       title: "Delivery",
       type: "string",
     },
+    {
+      name: "dimensions",
+      title: "Dimensions",
+      type: "string",
+    },
   ],
 };

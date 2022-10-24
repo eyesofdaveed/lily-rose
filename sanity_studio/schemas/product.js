@@ -47,6 +47,11 @@ export default {
       type: "string",
     },
     {
+      name: "dimensions",
+      title: "Dimensions",
+      type: "string",
+    },
+    {
       name: "category",
       title: "Category",
       type: "string",
