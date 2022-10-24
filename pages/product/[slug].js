@@ -6,6 +6,7 @@ import { ProductsCarousel } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, bestSellers }) => {
+  console.log(product);
   const { image, name, details, price, oldPrice, delivery, dimensions } =
     product;
   const [index, setIndex] = useState(0);
