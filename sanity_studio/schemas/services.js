@@ -19,7 +19,7 @@ export default {
     },
     {
       name: "slug",
-      title: "Slug",
+      title: "Slug, Fill this out(Unikalnim doljen byt)***",
       type: "slug",
       options: {
         source: "name",
