@@ -8,9 +8,9 @@ import {
 const Topbar = () => {
   return (
     <div className="topbar-container">
-      <h1 style={{ cursor: "default" }} className="topbar-desc">
+      <h2 style={{ cursor: "default" }} className="topbar-desc">
         Premium Flowers Delivery
-      </h1>
+      </h2>
       <div className="topbar-icons">
         <a
           target="_blank"

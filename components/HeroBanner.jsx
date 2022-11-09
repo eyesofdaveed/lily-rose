@@ -38,7 +38,7 @@ const HeroBanner = ({ heroBanner }) => {
           {heroBanner.buttonText}
         </AnchorLink>
         <div>
-          <h5>{heroBanner.desc}</h5>
+          <h4>{heroBanner.desc}</h4>
           <span>{heroBanner.smallText}</span>
         </div>
       </div>
