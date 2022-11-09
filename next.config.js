@@ -1,3 +1,6 @@
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -6,6 +9,7 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  plugins: [new BundleAnalyzerPlugin()],
 };
 
 module.exports = nextConfig;
