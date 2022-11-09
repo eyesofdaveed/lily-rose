@@ -52,7 +52,7 @@ const Contacts = () => {
             <div className="contact-icon-box">
               <Image
                 src="/real-estate.png"
-                alt="lily-rose-flowers delivery address in sunnyvale"
+                alt="lily-rose flowers bouquets delivery address in sunnyvale"
                 width="40"
                 height="40"
               />

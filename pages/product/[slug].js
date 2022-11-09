@@ -52,7 +52,7 @@ const ProductDetails = ({ product, bestSellers }) => {
         </div>
 
         <div className="product-detail-desc">
-          <h1>{name}</h1>
+          <h2>{name}</h2>
           <h4>Details: </h4>
           <p>{details}</p>
           <h4>Delivery:</h4>
