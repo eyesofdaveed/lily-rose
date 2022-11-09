@@ -6,7 +6,6 @@ import { ProductsCarousel } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, bestSellers }) => {
-  console.log(product);
   const {
     image,
     name,
@@ -54,12 +53,8 @@ const ProductDetails = ({ product, bestSellers }) => {
           <h1>{name}</h1>
           <h4>Details: </h4>
           <p>{details}</p>
-          {!!delivery && (
-            <>
-              <h4>Delivery:</h4>
-              <p>{delivery}</p>
-            </>
-          )}
+          <h4>Delivery:</h4>
+          <p>Next Day Delivery</p>
           {!!dimensions && (
             <>
               <h4>Approximate Dimensions: </h4>

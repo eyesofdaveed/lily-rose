@@ -83,7 +83,10 @@ const Contacts = () => {
                 height="40"
               />
             </div>
-            <a className="contact-box-button" href="tel:6502658941">
+            <a
+              className="contact-box-button"
+              href="https://www.facebook.com/profile.php?id=100086456916896"
+            >
               Facebook
             </a>
           </div>
