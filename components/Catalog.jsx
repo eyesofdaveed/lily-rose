@@ -28,7 +28,7 @@ const Catalog = ({ products }) => {
         </nav>
       </div>
 
-      <h1 className="category-filter-label">{selectedCategory.label}</h1>
+      <h2 className="category-filter-label">{selectedCategory.label}</h2>
       <div className="products-container">
         {products?.map((product) => {
           if (selectedCategory.value === "all") {
