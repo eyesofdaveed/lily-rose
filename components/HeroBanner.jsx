@@ -25,12 +25,12 @@ const HeroBanner = ({ heroBanner }) => {
         alt="online flowers bouquet marriage birthday hand to hand delivery"
         className="hero-banner-image"
       />
-      <h3>{heroBanner.midText}</h3>
+      <h1>{heroBanner.midText}</h1>
       <TypeAnimation
         // Same String at the start will only be typed once, initially
         sequence={bannerTextSequence}
         speed={60} // Custom Speed from 1-99 - Default Speed: 40
-        wrapper="h1" // Animation will be rendered as a <span>
+        wrapper="h2" // Animation will be rendered as a <span>
         repeat={Infinity} // Repeat this Animation Sequence infinitely
       />
       <div className="desc">
