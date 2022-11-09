@@ -43,6 +43,7 @@ const ProductDetails = ({ product, bestSellers }) => {
                 className={
                   i === index ? "small-image selected-image" : "small-image"
                 }
+                alt={name}
                 onMouseEnter={() => setIndex(i)}
               />
             ))}

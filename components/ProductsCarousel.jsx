@@ -51,6 +51,7 @@ const ProductsCarousel = ({ products }) => {
                     width={250}
                     height={250}
                     className="carousel-image"
+                    alt={product.name}
                   />
                   <p style={{ fontWeight: "500" }} className="product-name">
                     {product.name}

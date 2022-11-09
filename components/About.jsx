@@ -7,7 +7,11 @@ const About = ({ data }) => {
   return (
     <div className="about-us-container" id="about">
       <div className="about-us-left-column">
-        <img src={urlFor(data?.image[0])} className="about-us-image" />
+        <img
+          src={urlFor(data?.image[0])}
+          className="about-us-image"
+          alt="lily-rose-flowers-bouquets-delivery"
+        />
         <h3 className="about-us-greeting">{data.greeting}</h3>
       </div>
       <div className="about-us-right-column">

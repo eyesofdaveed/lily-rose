@@ -29,7 +29,11 @@ const FooterBanner = ({
           </a>
         </div>
       </div>
-      <img src={urlFor(image)} className="footer-banner-image" />
+      <img
+        src={urlFor(image)}
+        className="footer-banner-image"
+        alt="online-flowers-sale"
+      />
     </div>
   );
 };
