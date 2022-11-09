@@ -3,6 +3,7 @@ import {
   AiFillInstagram,
   AiFillPhone,
   AiFillEnvironment,
+  AiFillFacebook,
 } from "react-icons/ai";
 
 const Topbar = () => {
@@ -15,11 +16,11 @@ const Topbar = () => {
         <a
           target="_blank"
           className="topbar-icon-container"
-          href="https://www.google.com/maps/place/Sunnyvale,+CA,+USA/@37.3958499,-122.0939079,12z/data=!3m1!4b1!4m5!3m4!1s0x808fb645a9d05d3b:0x768dfb26dd7cc3a2!8m2!3d37.36883!4d-122.0363496"
+          href="https://www.facebook.com/profile.php?id=100086456916896"
           rel="noopener noreferrer"
         >
-          <AiFillEnvironment />
-          <span className="topbar-desc">Sunnyvale, California</span>
+          <AiFillFacebook />
+          <span className="topbar-desc">Facebook</span>
         </a>
         <a
           target="_blank"
@@ -34,10 +35,10 @@ const Topbar = () => {
           target="_blank"
           className="topbar-icon-container"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/lily_rose_bay_area/"
         >
           <AiFillInstagram />
-          <span className="topbar-desc">LilyRoseFlowers</span>
+          <span className="topbar-desc">Instagram</span>
         </a>
       </div>
     </div>

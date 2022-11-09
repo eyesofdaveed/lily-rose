@@ -57,7 +57,10 @@ const Contacts = () => {
                 height="40"
               />
             </div>
-            <a className="contact-box-button" href="tel:6502658941">
+            <a
+              className="contact-box-button"
+              href="https://goo.gl/maps/BF2kXmABQqKxrz8j6"
+            >
               Location
             </a>
           </div>
@@ -70,7 +73,10 @@ const Contacts = () => {
                 height="40"
               />
             </div>
-            <a className="contact-box-button" href="tel:6502658941">
+            <a
+              className="contact-box-button"
+              href="https://www.instagram.com/lily_rose_bay_area/"
+            >
               Instagram
             </a>
           </div>
