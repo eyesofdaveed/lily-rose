@@ -11,13 +11,7 @@ export default async function handler(req, res) {
         payment_method_types: ["card"],
         shipping_address_collection: { allowed_countries: ["US", "CA"] },
         billing_address_collection: "auto",
-        custom_fields: [
-          {
-            key: "delivery_instructions",
-            label: { type: "custom", custom: "Delivery Instructions" },
-            type: "text",
-          },
-        ],
+        shipping_options: [{ shipping_rate: "shr_1M3jVqHIQMNilloEhi6fU5Nt" }],
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
           const newImage = img
@@ -26,8 +20,6 @@ export default async function handler(req, res) {
               "https://cdn.sanity.io/images/y5p2xknm/production/"
             )
             .replace("-webp", ".webp");
-
-          console.log(newImage);
 
           return {
             price_data: {
