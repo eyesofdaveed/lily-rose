@@ -22,68 +22,69 @@ const Navbar = () => {
   const isOnHomePage = router.route === "/";
 
   return (
-    <div className="navbar-container">
-      <p className="logo">
-        <Link href="/">
-          <Image
-            src="/main-logo.png"
-            alt="Lily-Rose Flowers & Bouquets Delivery for any occasion"
-            width="160"
-            height="80"
-          />
-        </Link>
-      </p>
+    <>
+      <div className="navbar-container">
+        <p className="logo">
+          <Link href="/">
+            <Image
+              src="/main-logo.png"
+              alt="Lily-Rose Flowers & Bouquets Delivery for any occasion"
+              width="160"
+              height="80"
+            />
+          </Link>
+        </p>
 
-      {!isMobile && (
-        <>
-          <nav>
-            <ul className="navbar-menu">
-              <Dropdown label="Flowers" options={flowersOptions} />
-              {/* <Dropdown label="Services" options={servicesOptions} /> */}
-              <Link href={`/funeral`}>
-                <li className="navbar-menu-item">Funeral</li>
-              </Link>
-              {isOnHomePage ? (
-                <>
-                  <AnchorLink href={`#about`} offset="60">
-                    <li className="navbar-menu-item">About us</li>
-                  </AnchorLink>
-                  <AnchorLink href={`#contacts`} offset="60">
-                    <li className="navbar-menu-item">Contacts</li>
-                  </AnchorLink>
-                </>
-              ) : (
-                <>
-                  <Link href={`/#about`}>
-                    <li className="navbar-menu-item">About us</li>
-                  </Link>
-                  <Link href={`/#contacts`}>
-                    <li className="navbar-menu-item">Contacts</li>
-                  </Link>
-                </>
-              )}
-              <Link
-                href={{
-                  pathname: "/terms",
-                }}
-              >
-                <li className="navbar-menu-item">Delivery Terms</li>
-              </Link>
-            </ul>
-          </nav>
-          <button
-            type="button"
-            className="cart-icon"
-            onClick={() => setShowCart(true)}
-          >
-            <AiOutlineShopping />
-            <span className="cart-item-qty">{totalQuantities}</span>
-          </button>
-        </>
-      )}
-
+        {!isMobile && (
+          <>
+            <nav>
+              <ul className="navbar-menu">
+                <Dropdown label="Flowers" options={flowersOptions} />
+                {/* <Dropdown label="Services" options={servicesOptions} /> */}
+                <Link href={`/funeral`}>
+                  <li className="navbar-menu-item">Funeral</li>
+                </Link>
+                {isOnHomePage ? (
+                  <>
+                    <AnchorLink href={`#about`} offset="60">
+                      <li className="navbar-menu-item">About us</li>
+                    </AnchorLink>
+                    <AnchorLink href={`#contacts`} offset="60">
+                      <li className="navbar-menu-item">Contacts</li>
+                    </AnchorLink>
+                  </>
+                ) : (
+                  <>
+                    <Link href={`/#about`}>
+                      <li className="navbar-menu-item">About us</li>
+                    </Link>
+                    <Link href={`/#contacts`}>
+                      <li className="navbar-menu-item">Contacts</li>
+                    </Link>
+                  </>
+                )}
+                <Link
+                  href={{
+                    pathname: "/terms",
+                  }}
+                >
+                  <li className="navbar-menu-item">Delivery Terms</li>
+                </Link>
+              </ul>
+            </nav>
+            <button
+              type="button"
+              className="cart-icon"
+              onClick={() => setShowCart(true)}
+            >
+              <AiOutlineShopping />
+              <span className="cart-item-qty">{totalQuantities}</span>
+            </button>
+          </>
+        )}
+      </div>
       {showCart && <Cart />}
-    </div>
+    </>
   );
 };
 
