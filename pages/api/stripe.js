@@ -9,9 +9,9 @@ export default async function handler(req, res) {
         submit_type: "pay",
         mode: "payment",
         payment_method_types: ["card"],
+        shipping_address_collection: { allowed_countries: ["US", "CA"] },
         billing_address_collection: "auto",
-        /*         shipping_options: [{ shipping_rate: "shr_1LdzFEJ5WvVtx3stTC0iluOH" }],
-         */ line_items: req.body.map((item) => {
+        line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
           const newImage = img
             .replace(
@@ -19,6 +19,8 @@ export default async function handler(req, res) {
               "https://cdn.sanity.io/images/vfxfwnaw/production/"
             )
             .replace("-webp", ".webp");
+
+          console.log(newImage);
 
           return {
             price_data: {
