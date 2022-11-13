@@ -1270,10 +1270,6 @@ span.text-red {
     font-size: 16px;
     color: black;
   }
-  .cart-bottom {
-    padding: 30px;
-  }
-
   .total h3 {
     font-size: 20px;
   }
@@ -1375,6 +1371,10 @@ span.text-red {
   .funeral-top-container {
     height: 50vh;
   }
+  .cart-bottom {
+    bottom: 60px;
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1428,6 +1428,10 @@ span.text-red {
   }
   .funeral-top-container p {
     width: 100%;
+  }
+  .cart-bottom {
+    bottom: 80px;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 500px) {
