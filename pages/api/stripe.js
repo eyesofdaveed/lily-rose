@@ -11,6 +11,13 @@ export default async function handler(req, res) {
         payment_method_types: ["card"],
         shipping_address_collection: { allowed_countries: ["US", "CA"] },
         billing_address_collection: "auto",
+        custom_fields: [
+          {
+            key: "delivery_instructions",
+            label: { type: "custom", custom: "Delivery Instructions" },
+            type: "text",
+          },
+        ],
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
           const newImage = img
