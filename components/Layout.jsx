@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
           name="keywords"
           content="flowers, bouquest, flowers in vase, arrangements, roses, tulips, 50 roses, 25 roses, 25 tulips, 50 tulips, bouquet of roses, flowers delivery, birthday flowers delivery, sympathy flowers delivery, same day flowers delivery, funeral flowers delivery, flowers delivery near me, flowers delivery bay area, flowers delivery sunnyvale, mothers day flowers delivery, online flowers shop, online flowers delivery, flowers for marriage, flowers for birthdays, flowers for events, flowers and gifts,Sunnyvale,
           Santa Clara,
-          Mt. View,
+          Mountain View,
           San Jose,
           Milpitas,
           Saratoga,
