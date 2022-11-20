@@ -7,7 +7,7 @@ import { urlFor } from "../lib/client";
 const servingAreas = [
   "Sunnyvale",
   "Santa Clara",
-  "Mt. View",
+  "Mountain View",
   "San Jose",
   "Milpitas",
   "Saratoga",
