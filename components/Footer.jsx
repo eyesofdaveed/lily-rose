@@ -10,7 +10,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="footer-container">
-      <p>{currentYear} Lily-Rose-Flowers All rights reserverd</p>
+      <p>{currentYear} Lily-Rose-Flowers. All rights reserved.</p>
       <p className="icons">
         <a
           target="_blank"
